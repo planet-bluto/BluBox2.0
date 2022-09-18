@@ -1,0 +1,14 @@
+{
+  "main": "index.html",
+  "name": "BluBox",
+  "chromium-args": "--allow-file-access-from-files --allow-file-access --user-data-dir",
+  "window": {
+    "width": 960,
+    "height": 570,
+    "position": "mouse",
+    "icon": "./assets/icon.png"
+  },
+  "dependencies": {
+    "node-wav": "0.0.2"
+  }
+}

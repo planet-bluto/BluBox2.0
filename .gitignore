@@ -1,0 +1,6 @@
+node_modules/
+dist/
+bin/
+package-lock.json
+front/samples
+front/node_modules

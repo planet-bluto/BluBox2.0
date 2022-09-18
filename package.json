@@ -1,0 +1,23 @@
+{
+  "name": "pandoraopenbox",
+  "version": "2.1.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "dev": "nw front/"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "fs-extra": "^10.1.0",
+    "nw": "^0.44.1-sdk",
+    "progress": "^2.0.3",
+    "rcedit": "^3.0.1",
+    "zip-a-folder": "^1.1.5"
+  },
+  "dependencies": {
+    "audio-buffer-from": "^1.1.1",
+    "audio-buffer-utils": "^5.1.2",
+    "node-wav": "0.0.2"
+  }
+}
