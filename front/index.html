@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="shortcut icon" type="image/x-icon" href="https://pandoras-box.thurm64.repl.co/favicon.ico"/>
     <!-- CDN for jQuery and select2 -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="" crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet"/>
@@ -21,7 +20,6 @@
     <meta name="msapplication-config" content="/browserconfig.xml"/>
     <meta name="format-detection" content="telephone=no"/>
     <link rel="apple-touch-icon" sizes="180x180" href="https://pandoras-box.thurm64.repl.co/apple-touch-icon.png"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="https://pandoras-box.thurm64.repl.co/icon_32.png"/>
     <link rel="manifest" href="https://pandoras-box.thurm64.repl.co/manifest.webmanifest"/>
     <link href="https://fonts.googleapis.com/css?family=B612" rel="stylesheet" rel="stylesheet" media="none" onload="if (this.media != 'all') this.media='all';"/> <!-- this is a trick to load CSS asynchronously. -->
     <meta name="robots" content="noindex, nofollow"/>
@@ -160,12 +158,14 @@
         <section>
 
             <h1>
-                <font color="#9c64f7">BluBox 2.0</font>
+                <font color="#9c64f7">BluBox 2.1</font>
                 <div id="jummboxPlant" style="display: inline; color:#62a13b"></div>
             </h1>
+            <h2>===Important BluBox Info===</h2>
+            <p>To load samples, you have to first put a .WAV file in the <span style="color:#00f;text-decoration:underline;" id="openbox-samples">samples</span> folder then load them by going to Edit > Add External Samples...</p>
             <p>IMPORT URL: </p><input id="openbox-url"></input><button id="openbox-button">LOAD</button>
             <p>(you may have to open the add custom sample dialog and press enter to load samples)</p>
-            <p>
+            <h2>===Basic Jummbox Info===</h2>
             <p>
                 If you're familiar with BeepBox and just want to learn what JummBox does differently, check out this <a href="https://youtu.be/26yDP4ACuzE">overview video</a>.
             </p>
@@ -293,19 +293,19 @@
 
         // Randomize display of header
         // 1-in-10
-        if (Math.floor(Math.random() * 10) == 0) {
+        if (Math.floor(Math.random() * 2) == 0) {
             switch (Math.floor(Math.random() * 4)) {
                 case 0:
-                    document.getElementById("jummboxPlant").innerHTML = "  🍂";
+                    document.getElementById("jummboxPlant").innerHTML = "  ⚡";
                     break;
                 case 1:
-                    document.getElementById("jummboxPlant").innerHTML = "  🌿";
+                    document.getElementById("jummboxPlant").innerHTML = "  🔵";
                     break;
                 case 2:
-                    document.getElementById("jummboxPlant").innerHTML = "  🌺";
+                    document.getElementById("jummboxPlant").innerHTML = "  💫";
                     break;
                 case 3:
-                    document.getElementById("jummboxPlant").innerHTML = "  🍃";
+                    document.getElementById("jummboxPlant").innerHTML = "  👽";
                     break;
             }
         }
